@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-pascal's triangle function
+Function that generates a pascal's triangle
 """
 
 
@@ -10,6 +10,7 @@ def pascal_triangle(n):
     the Pascal’s triangle of n
     Returns an empty list if n <= 0
     """
+
     if n <= 0:
         return []
     ps = [[1]]
@@ -19,6 +20,7 @@ def pascal_triangle(n):
         for j in range(len(pre)):
             new = pre[j] + pre[j + 1] if j != len(pre) - 1 else 1
             row.append(new)
+
         ps.append(row)
 
     return ps
