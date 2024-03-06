@@ -4,7 +4,7 @@ generates a pascal triangle"""
 
 
 def pascal_triangle(n):
-    """This function returns a list of lists of initegers
+    """returns a list of lists of initegers
     representing a Pascal's triangle of n
     """
     rows = []
