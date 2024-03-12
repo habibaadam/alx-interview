@@ -17,7 +17,7 @@ def canUnlockAll(boxes):
 
     for everybox in boxes:
         if len(everybox) == 0 or startpoint == 0:
-            unlocked[startpoint] = 0
+            unlocked[startpoint] = "unlocked"
         for key in everybox:
             if key < len(boxes) and key != startpoint:
                 unlocked[key] = key
