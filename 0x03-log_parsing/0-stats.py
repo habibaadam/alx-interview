@@ -44,7 +44,7 @@ def process_input():
 
                 # checking existence of status code in possible status code
                 # increment the count of that status code
-                if status_code in possible_stat_codes:
+                if status_code in possible_stat_codes.keys():
                     possible_stat_codes[status_code] += 1
 
                 file_size = int(line[-1])
@@ -57,9 +57,18 @@ def process_input():
                 lines_read = 0
                 print(f"File size: {total_size}")
 
+                for key, value in possible_stat_codes.items():
+                    if value != 0:
+                        print('{}: {}'.format(key, value))
+
     except KeyboardInterrupt:
         # Handle keyboard interruption (CTRL + C)
-        print("Keyboard interruption detected. Exiting...")
+        pass
+
+    finally:
+        for key, value in possible_stat_codes.items():
+            if value != 0:
+                print('{}: {}'.format(key, value))
 
 
 if __name__ == "__main__":
