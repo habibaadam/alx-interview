@@ -3,3 +3,6 @@
 
 # Ignore pyc
 *.pyc
+
+# and pycache
+*__pycache__
