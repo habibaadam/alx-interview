@@ -3,7 +3,8 @@
 script that reads stdin line by line and computes metrics:
 
 Input format: <IP Address> - [<date>] "GET /projects/260 HTTP/1.1"
-<status code> <file size> (if the format is not this one, the line must be skipped)
+<status code> <file size> (
+if the format is not this one, the line must be skipped)
 After every 10 lines and/or a keyboard interruption (CTRL + C),
 print these statistics from the beginning:
 Total file size: File size: <total size>
@@ -46,11 +47,10 @@ def process_input():
                 if status_code in possible_stat_codes:
                     possible_stat_codes[status_code] += 1
 
-
                 file_size = int(line[-1])
                 total_size += file_size
 
-                #increment or count number of lines read
+                # increment or count number of lines read
                 lines_read += 1
 
             if lines_read == 10:
