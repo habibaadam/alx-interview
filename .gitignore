@@ -8,5 +8,4 @@
 *__pycache__
 
 # Ignore configs
-package.json
-package-lock.json
+node_modules
