@@ -2,7 +2,7 @@
 
 const request = require('request');
 const ID = process.argv[2];
-const url =`https://swapi-api.alx-tools.com/api/films/${ID}/`;
+const url = `https://swapi-api.alx-tools.com/api/films/${ID}/`;
 
 function getCharacter (listChar, index) {
   if (index === listChar.length) {
