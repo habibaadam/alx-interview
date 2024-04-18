@@ -8,4 +8,4 @@
 *__pycache__
 
 # Ignore configs
-node_modules
+*node_modules
