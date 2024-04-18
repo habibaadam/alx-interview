@@ -6,3 +6,7 @@
 
 # and pycache
 *__pycache__
+
+# Ignore configs
+package.json
+package-lock.json
